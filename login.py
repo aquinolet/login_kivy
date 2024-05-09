@@ -3,7 +3,7 @@ from kivy.uix.label import Label
 from kivy.uix.button import Button
 from kivy.uix.textinput import TextInput
 from kivy.uix.boxlayout import BoxLayout
-from kivy.uix.image import Image
+from kivy.uix.image import Image, AsyncImage
 from kivy.utils import get_color_from_hex
 
 class MeuApp(App):
@@ -11,7 +11,7 @@ class MeuApp(App):
         Window = BoxLayout(orientation='vertical', padding=[120,120], spacing=11)
 
         #imagem
-        im = Image(source="imagem.png")
+        im = AsyncImage(source="https://cdn-icons-png.flaticon.com/512/9187/9187604.png")
 
         #textos
         texto = Label(text='LOGIN', font_size=40, font_name=('Arial'))
